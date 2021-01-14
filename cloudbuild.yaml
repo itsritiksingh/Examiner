@@ -1,7 +1,8 @@
 steps:
   # Build the container image
   - name: "gcr.io/cloud-builders/docker"
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/examiner:$COMMIT_SHA', '.']
+    # args: ['build', '-t', 'gcr.io/$PROJECT_ID/examiner:$COMMIT_SHA', '.']
+    args: ['build', '-t', 'examiner:$COMMIT_SHA', '.']
 
   # Push the container image to Container Registry
   # - name: 'gcr.io/cloud-builders/docker'
@@ -20,4 +21,5 @@ steps:
       - "--platform"
       - "managed"
 images:
-  - "gcr.io/$PROJECT_ID/examiner:$COMMIT_SHA"
+  - "examiner:$COMMIT_SHA" 
+  # - "gcr.io/$PROJECT_ID/examiner:$COMMIT_SHA" 
