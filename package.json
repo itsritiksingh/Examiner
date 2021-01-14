@@ -1,0 +1,29 @@
+{
+  "name": "examiner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "Ritik Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@admin-bro/express": "^3.0.1",
+    "@admin-bro/mongoose": "^1.1.0",
+    "@admin-bro/upload": "^1.2.0",
+    "@google-cloud/storage": "^5.7.2",
+    "@jsweb/randkey": "^4.1.2",
+    "admin-bro": "^3.3.1",
+    "bcrypt": "^5.0.0",
+    "busboy": "^0.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.15",
+    "nodemon": "^2.0.4",
+    "querymen": "^2.1.4",
+    "rimraf": "^3.0.2"
+  }
+}
