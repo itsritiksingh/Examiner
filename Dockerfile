@@ -11,6 +11,4 @@ COPY . /app
 
 EXPOSE 5000
 
-ENTRYPOINT ["node"]
-
-CMD ["server.js"]
+CMD ["node server.js && gcloud run deploy"]
