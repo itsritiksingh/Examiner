@@ -38,6 +38,9 @@ export const Navbar = () => {
           Report <PieChartOutlined />
         </Button>
       </Link>
+      <Button type="primary" onClick={()=>{localStorage.removeItem("jwt"); window.location.reload()}}>
+         SignOut
+        </Button>
     </nav>
   );
 };
