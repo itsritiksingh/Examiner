@@ -15,7 +15,7 @@ steps:
       - "deploy"
       - "examiner"
       - "--image"
-      - "gcr.io/$PROJECT_ID/examiner:$COMMIT_SHA"
+      - "examiner:$COMMIT_SHA" 
       - "--region"
       - "us-central1"
       - "--platform"
