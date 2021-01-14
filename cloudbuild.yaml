@@ -20,4 +20,4 @@ steps:
       - "--platform"
       - "managed"
 images:
-  -"examiner:$COMMIT_SHA"
+  - "examiner:$COMMIT_SHA"
